@@ -3,11 +3,11 @@ const CustomError = require("../extensions/custom-error");
 const MODERN_ACTIVITY= 15; 
 const HALF_LIFE_PERIOD= 5730;
 
-module.exports = function dateSample(/* sampleActivity */) {
+module.exports = function dateSample(sampleActivity) {
   if (
-    typeof sampleActivity != String ||
-    typeof sampleActivity == null ||
-    typeof sampleActivity == undefined
+    typeof sampleActivity !=  String ||
+    typeof sampleActivity ==  null ||
+    typeof sampleActivity ==  undefined
   ) {
     return false;
   }
